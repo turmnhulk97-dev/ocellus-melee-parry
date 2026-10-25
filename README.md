@@ -1,60 +1,4 @@
 
-# Ocellus Melee Parry Trainer
-
-A lightweight Lua project for practicing reaction timing for melee parries.
-
-## Features
-
-- Randomized attack cues
-- Configurable parry window
-- Successful parry and miss tracking
-- Reaction-time statistics
-- No external dependencies
-
-## Requirements
-
-- Lua 5.1 or newer
-- Terminal or command prompt
-
-## Usage
-
-Run:
-
-```bash
-lua main.lua
-```
-
-Press Enter when the attack cue appears.
-
-## Configuration
-
-Edit the CONFIG table in main.lua:
-
-- rounds: Number of practice attempts
-- parryWindow: Target time in seconds
-- minDelay: Minimum delay before an attack
-- maxDelay: Maximum delay before an attack
-
-## Limitations
-
-This is a standalone reaction-time simulator. It does not
-read Ocellus game events or send in-game parry inputs.
-
-## License
-
-
-MIT License
-
-Copyright (c) 2026
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files, to deal in the Software
-without restriction, including without limitation the rights to use, copy,
-modify, merge, publish, distribute, sublicense, and/or sell copies.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-
-
 -- Ocellus Melee Parry Practice
 -- Standalone Lua training simulator
 -- Requires LuaSocket for accurate timed input? No.
@@ -143,5 +87,61 @@ end
 
 print("\nTraining session complete!")
 printStats()
+
+# Ocellus Melee Parry Trainer
+
+A lightweight Lua project for practicing reaction timing for melee parries.
+
+## Features
+
+- Randomized attack cues
+- Configurable parry window
+- Successful parry and miss tracking
+- Reaction-time statistics
+- No external dependencies
+
+## Requirements
+
+- Lua 5.1 or newer
+- Terminal or command prompt
+
+## Usage
+
+Run:
+
+```bash
+lua main.lua
+```
+
+Press Enter when the attack cue appears.
+
+## Configuration
+
+Edit the CONFIG table in main.lua:
+
+- rounds: Number of practice attempts
+- parryWindow: Target time in seconds
+- minDelay: Minimum delay before an attack
+- maxDelay: Maximum delay before an attack
+
+## Limitations
+
+This is a standalone reaction-time simulator. It does not
+read Ocellus game events or send in-game parry inputs.
+
+## License
+
+MIT
+
+MIT License
+
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files, to deal in the Software
+without restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 
